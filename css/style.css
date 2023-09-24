@@ -1,0 +1,348 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	/* font-family: 'Roboto', sans-serif; */
+	/* font-family: 'Caesar Dressing', cursive; */
+	font-family:arial;
+	}
+	/* .container{ */
+		/* width:85%; */
+		/* margin:auto; */
+	/* } */
+	a{
+		text-decoration:none;
+	}
+	.title{
+		padding-top:20px;
+	}
+	.title h3{
+		text-align:center;
+		font-size:3rem;
+		color: #439180;
+	}		
+	header{
+		width:100%;
+		/* box-shadow:0 0 10px #999; */
+		position:fixed;
+		background-color:#999999;
+		z-index:20;
+	}
+	header:hover{
+		box-shadow:0 0 20px #ccc;
+		background-color: #439180;
+	}
+	
+	.head-row{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		padding:5px 0;
+	}
+	.head-logo h1{
+		color:#fff;
+		font-family: 'Caesar Dressing', cursive;
+		font-size:35px;
+		text-shadow:0 0 30px #ccc;
+		
+		position:relative;
+		
+		
+	}
+	.head-logo h1::after{
+		content:"";
+		width:100%;
+		height:4px;
+		background-color:#000;
+		
+		position:absolute;
+		top:18%;
+		left:18%;
+		
+		box-shadow:5px 0 10px #fff;
+	}
+		
+	.head-logo h1:hover{
+		text-shadow:0 0 10px #439180;
+		cursor:pointer;
+	}
+	.head-logo h1 span{
+		font-family: 'Major Mono Display', monospace;
+		text-shadow:0 0 10px #fff;
+		color:#000;
+		font-size:60px;
+	}
+	/* .head-nav{ */
+		/* width:40%; */
+	/* } */
+	.head-nav ul{
+		display:flex;
+		justify-content:space-between;
+		
+	}
+	.head-nav ul li{
+		list-style-type:none;
+	}
+	.head-nav ul li a{
+		font-family: 'Roboto', sans-serif;
+		color:#000;
+		font-size:20px;
+		
+		position:relative;
+	}
+	.head-nav ul li a:hover{
+		color:#fff;
+		border:2px solid #fff;
+		border-radius:50px;
+		/* background-color:#439180; */
+		padding:3px 5px ;
+		transition:all 0.3s ease-in-out;
+		transition:scale(2);
+	}
+	
+	/* .head-menu{ */
+		/* display:none; */
+	/* } */
+	
+	/* baner section */
+	
+	#baner-sec{
+		/* height:100vh; */
+		
+		background-image:url("../images/hero-3.jpg");
+		background-image:no-repeat;
+		background-size:cover;
+		background-position:left;
+		filter:brightness(80%);
+	}
+	.baner-row{
+		
+		/* display:flex; */
+		padding-top:20%;
+	}
+	/* .baner-col-left{ */
+		/* width:70%; */
+	/* } */
+	/* .baner-col-right{ */
+		/* width:30%; */
+	/* } */
+	.baner-card{
+		line-height:2;
+		position:relative;
+	}
+	.baner-card h3{
+		color:#fff;
+		font-size:25px;
+		text-shadow:0 0 15px #ccc;
+		animation:name 0.5s linear infinite;
+	}
+	@keyframes name{
+		0%{
+			color:#fff;
+		}
+		20%{
+			color:#ccc;
+		}
+		30%{
+			color:#999;
+		}
+		40%{
+			color:#439180;
+		}
+		50%{
+			color:#fff;
+		}
+		60%{
+			color:#ccc;
+		}
+		70%{
+			color:#999;
+		}
+		80%{
+			color:#439180;
+		}
+		90%{
+			color:#ffff;
+		}
+		100%{
+			color:#ccc;
+		}
+	}
+	.baner-card h1{
+	color:#fff;
+	font-size:2.5rem;
+	font-family: 'Bruno Ace', cursive;
+		
+	}
+	.baner-card h1 span{
+		color:#439180;
+		font-size:3.5rem;
+	}
+	.baner-btn a{
+		
+		color:#439180;		
+		font-size:25px;
+		border:3px solid #439180;
+		padding:9px 25px;
+		border-radius:50px;
+		font-family:arial;
+	}
+	.baner-btn a:hover{
+		background-color:#439180;
+		box-shadow:0 0 15px #fff;
+		color:#fff;
+		transition:all 0.3s linear;
+	}
+	
+	/* about section */
+	
+	/* #abt-sec{ */
+		/* height:100vh; */
+	/* } */
+	/* service section */
+	/* #creation-sec{ */
+		/* height:100vh; */
+	/* } */
+	
+	/* contect section */
+	
+	#contec-sec{
+		/* height:70vh; */
+		background-image:url("../images/hero-7.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+	}
+	/* .contec-row{ */
+		/* display:flex; */
+		/* padding-top:4%; */
+	/* } */
+	/* .contec-col{ */
+		/* width:33.33%; */
+		/* padding:10px; */
+		
+	/* } */
+	.contec-icon{
+		margin:auto;
+		width:70px;
+		height:70px;
+		background-color:#439180;
+		border-radius:50%;
+		
+	}
+	.contec-icon i{
+		color:#fff;
+		border-radius:50%;
+		font-size:20px;
+		
+		padding-top:24px;
+	}
+	
+	.contec-card{
+		text-align:center;
+		background-color:#616663;
+		line-height:2;
+		padding:10% 0;
+		border:7px solid #439180;
+		
+		position:relative;
+		
+	}
+	.contec-card:hover{
+		box-shadow:0 0 20px #fff;
+		filter:opacity(70%);
+		transition:all 0.4s linear;
+	}
+	.contec-card:hover .contec-icon{
+		transform:scale(1.2);
+		transition:all 0.4s linear;
+		/* border:3px solid #fff; */
+		box-shadow:0 0 15px #fff;
+		
+		position:absolute;
+		top:-25%;
+		left:40%;
+	}
+	.contec-card:hover .contec-icon{
+		border:4px dotted #fff;
+		animation:load 2s linear infinite;
+	}
+	@keyframes load{
+		0%{
+			transform:rotate(0deg);
+		}
+		10%{
+			transform:rotate(45deg);
+		}
+		20%{
+			transform:rotate(90deg);
+		}
+		40%{
+			transform:rotate(180deg);
+			/* transform:scale(1.3); */
+			background-color:#000;
+		}
+		60%{
+			transform:rotate(270deg);
+		}
+		80%{
+			transform:rotate(315deg);
+		}
+		100%{
+			transform:rotate(360deg);
+			transform:scale(1.3);
+			
+		}
+	}
+		
+	.contec-card h2{
+		color:#fff;
+	}
+	.contec-card a{
+		color:#fff;
+	}
+	.contec-card a:hover{
+		/* color:#439180; */
+		text-decoration:underline 2px solid #fff;
+	}
+	
+	/* footer section */
+	
+	footer{
+		/* height:20vh; */
+		background-color:#202121;
+	}
+	.footer-row{
+		/* display:flex; */
+		padding-top:3%;
+		justify-content:space-between;
+	}
+	.footer-cont{
+		/* width:30%; */
+		padding:0 30px;
+		line-height:1.5;
+	}
+	.footer-cont h3{
+		color:#fff;
+		font-size:16px;
+	}
+	.footer-cont h3 span{
+		color:#439180;
+	}
+	/* .footer-social{ */
+		/* width:20%; */
+	/* } */
+	.footer-social i{
+		color:#fff;
+		font-size:1.5rem;
+		padding:6px;
+	}
+	.footer-social i:hover{
+		color:#439180;
+		padding:6px;
+		background-color:#fff;
+		border-radius:20%;
+		box-shadow:0 0 10px #999;
+		transform:scale(1.2);
+		transition:all 0.3s linear;
+		
+	}
